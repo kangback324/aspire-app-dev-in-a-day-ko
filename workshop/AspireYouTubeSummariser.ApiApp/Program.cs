@@ -64,10 +64,10 @@ app.MapGet("/weatherforecast", () =>
             summaries[Random.Shared.Next(summaries.Length)]
         ))
         .ToArray();
-    return forecast;
+    return Results.Json(forecast);
 })
 .WithName("GetWeatherForecast")
-.WithOpenApi();
+.WithOpenApi();  // <- 이 부분을 MapGet과 연결하여 사용
 
 app.MapPost("/summarise", async ([FromBody] SummaryRequest req, YouTubeSummariserService service) =>
 {
