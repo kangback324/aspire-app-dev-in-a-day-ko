@@ -15,5 +15,3 @@ builder.AddProject<Projects.AspireYouTubeSummariser_WebApp>("webapp")
        .WithReference(apiapp);
 
 builder.Build().Run();
-
-/*제발좀 되라 좀*/
