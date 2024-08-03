@@ -16,4 +16,4 @@ builder.AddProject<Projects.AspireYouTubeSummariser_WebApp>("webapp")
 
 builder.Build().Run();
 
-/*제발좀 되라*/
+/*제발좀 되라 좀*/
