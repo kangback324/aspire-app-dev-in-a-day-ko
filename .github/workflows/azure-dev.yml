@@ -6,6 +6,7 @@ on:
     branches:
       - main
       - master
+    
     paths:
       - 'workshop/**/*'
 
@@ -30,7 +31,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Install .NET 8 SDK
         uses: actions/setup-dotnet@v4
         with:
