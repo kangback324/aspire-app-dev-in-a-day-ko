@@ -116,5 +116,3 @@ internal class YouTubeSummariserService(IYouTubeVideo youtube, AzureOpenAIClient
         return summary;
     }
 }
-
-/**/
